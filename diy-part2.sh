@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.4/g' package/base-files/files/bin/config_generate
 sed -i s/"libpcre"/"libpcre2"/ package/feeds/telephony/freeswitch/Makefile
 sed -i s/'default LIBCURL_WOLFSSL'/'default LIBCURL_OPENSSL'/ feeds/packages/net/curl/Config.in
 [ -d package/lean/v2raya ] && rm -rf feeds/packages/net/v2raya
